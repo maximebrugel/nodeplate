@@ -1,0 +1,17 @@
+*.iml
+*.log
+
+dist/
+node_modules/
+
+src/config/environnements/dev.ts
+src/config/environnements/prod.ts
+
+.idea/*
+
+logs/*
+
+yarn-error.log
+tslint-to-esling-config.log
+
+package-lock.json
