@@ -68,7 +68,7 @@ export class ProductController {
    */
   public health(req: any, res: any, next: any) {
     try {
-      res.status(200).json(this.productManager.managerExemple());
+      res.status(200).json(this.productManager.managerExample());
     } catch (error) {
       next(error);
     }

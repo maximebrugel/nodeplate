@@ -1,4 +1,4 @@
-import environnement from "./environnement";
+import environment from "./environment";
 import winston from "winston";
 
 const myMessage = winston.format.printf(
@@ -7,7 +7,7 @@ const myMessage = winston.format.printf(
   logger = winston.createLogger({
     exceptionHandlers: [
       new winston.transports.File({
-        filename: `${environnement.LOG_ERROR_PATH}`
+        filename: `${environment.LOG_ERROR_PATH}`
       })
     ],
     format: winston.format.combine(
@@ -23,11 +23,11 @@ const myMessage = winston.format.printf(
       // - Write all logs error (and below) to `error.log`.
       //
       new winston.transports.File({
-        filename: `${environnement.LOG_ERROR_PATH}`,
+        filename: `${environment.LOG_ERROR_PATH}`,
         level: "error"
       }),
       new winston.transports.File({
-        filename: `${environnement.LOG_COMBINED_PATH}`
+        filename: `${environment.LOG_COMBINED_PATH}`
       })
     ]
   });

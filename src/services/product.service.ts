@@ -22,14 +22,14 @@ export class ProductService {
   /**
    * Fake service 1
    */
-  public exempleServiceO(): string {
+  public exampleServiceO(): string {
     return "O";
   }
 
   /**
    * Fake service 2
    */
-  public exempleServiceK(): string {
+  public exampleServiceK(): string {
     return "K";
   }
 }

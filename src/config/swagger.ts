@@ -1,12 +1,12 @@
-import environnement from "./environnement";
+import environment from "./environment";
 
 const swaggerDefinition = {
     basePath: "/",
-    host: `${environnement.API_URL}:${environnement.PORT}`,
+    host: `${environment.API_URL}:${environment.PORT}`,
     info: {
       description: "Nodeplate API documentation",
       title: "Nodeplate",
-      version: environnement.VERSION
+      version: environment.VERSION
     },
     securityDefinitions: {
       bearerAuth: {

@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import { Schema, model } from "mongoose";
 import { Product } from "./interfaces/product.interface";
 
 const ProductSchema: Schema = new Schema({
@@ -6,6 +6,8 @@ const ProductSchema: Schema = new Schema({
     type: String,
     unique: true
   }
+}, {
+  strict: 'throw'
 });
 
-export default mongoose.model<Product>("product", ProductSchema);
+export default model<Product>("product", ProductSchema);

@@ -1,8 +1,8 @@
-import mongoose from "mongoose";
-import environnement from "./environnement";
+import * as mongoose from "mongoose";
+import environment from "./environment";
 
-const mongoUri = `mongodb://${environnement.MONGO_USER}:${environnement.MONGO_PASSWORD}@${environnement.MONGO_HOST}:${environnement.MONGO_PORT}
-/${environnement.MONGO_DATABASE}?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=${environnement.MONGO_AUTH_SOURCE}&authMechanism=${environnement.MONGO_AUTH_MECANISM}`;
+const mongoUri = `mongodb://${environment.MONGO_USER}:${environment.MONGO_PASSWORD}@${environment.MONGO_HOST}:${environment.MONGO_PORT}
+/${environment.MONGO_DATABASE}?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=${environment.MONGO_AUTH_SOURCE}&authMechanism=${environment.MONGO_AUTH_MECANISM}`;
 
 mongoose.set("useCreateIndex", true);
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });

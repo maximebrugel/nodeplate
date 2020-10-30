@@ -15,12 +15,12 @@ export default {
   LOG_ERROR_PATH: "logs/error.log",
 
   /**
-   * SCRAM authentification mechanism
+   * SCRAM authentication mechanism
    */
   MONGO_AUTH_MECANISM: "SCRAM-SHA-256",
 
   /**
-   * Authentification collection where the login is stored
+   * Authentication collection where the login is stored
    */
   MONGO_AUTH_SOURCE: "admin",
 
