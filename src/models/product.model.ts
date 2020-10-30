@@ -6,8 +6,6 @@ const ProductSchema: Schema = new Schema({
     type: String,
     unique: true
   }
-}, {
-  strict: 'throw'
-});
+}, { strict: "throw" });
 
 export default model<Product>("product", ProductSchema);
