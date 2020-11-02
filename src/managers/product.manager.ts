@@ -14,9 +14,9 @@ export class ProductManager {
    * Illustrate de way a manager is calling multiple services, by
    * concatenating 2 values from 2 services.
    */
-  public managerExemple(): string {
-    const valueO: string = this.productService.exempleServiceO(),
-      valueK: string = this.productService.exempleServiceK();
+  public managerExample(): string {
+    const valueO: string = this.productService.exampleServiceO(),
+      valueK: string = this.productService.exampleServiceK();
 
     return valueO.concat(valueK);
   }

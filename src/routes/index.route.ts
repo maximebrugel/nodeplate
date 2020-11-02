@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { ProductRoute } from "./product.route";
-import environnement from "../config/environnement";
+import environment from "../config/environment";
 
 /**
  * Root api router specifications
@@ -29,7 +29,7 @@ export class IndexRoute {
     this.api.get("/", (req, res) => {
       res.json({
         server: "Nodeplate",
-        version: environnement.VERSION
+        version: environment.VERSION
       });
     });
 

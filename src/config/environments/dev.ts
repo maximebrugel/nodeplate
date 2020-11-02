@@ -15,19 +15,19 @@ export default {
   LOG_ERROR_PATH: "logs/error.log",
 
   /**
-   * SCRAM authentification mechanism
+   * SCRAM authentication mechanism
    */
   MONGO_AUTH_MECANISM: "SCRAM-SHA-256",
 
   /**
-   * Authentification collection where the login is stored
+   * Authentication collection where the login is stored
    */
-  MONGO_AUTH_SOURCE: "admin",
+  MONGO_AUTH_SOURCE: "test1",
 
   /**
    * MongoDB database Name
    */
-  MONGO_DATABASE: "Database",
+  MONGO_DATABASE: "test1",
 
   /**
    * MongoDB database host (localhost or IP adress)
@@ -37,17 +37,17 @@ export default {
   /**
    * MongoDB connection password
    */
-  MONGO_PASSWORD: "admin",
+  MONGO_PASSWORD: "test1password",
 
   /**
    * MongoDB database Port (mainly 27017)
    */
-  MONGO_PORT: 27017,
+  MONGO_PORT: 28018,
 
   /**
    * MongoDB connection username
    */
-  MONGO_USER: "admin",
+  MONGO_USER: "test1user",
 
   /**
    * Server port that you will find in the URL :

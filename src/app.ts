@@ -1,4 +1,4 @@
-import environnement from "./config/environnement";
+import environment from "./config/environment";
 import express from "./config/express";
 import log from "./logger/log";
 import { Express } from "express";
@@ -27,9 +27,9 @@ class App {
    * Start application server
    */
   private listen(): void {
-    this.app.listen(environnement.PORT, () => {
+    this.app.listen(environment.PORT, () => {
       log.info(
-        `Started on http://${environnement.API_URL}:${environnement.PORT}`
+        `Started on http://${environment.API_URL}:${environment.PORT}`
       );
     });
   }

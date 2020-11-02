@@ -81,7 +81,7 @@ export class ProductRoute {
 
     /**
      * @swagger
-     * /api/manager/exemple:
+     * /api/manager/example:
      *   get:
      *     tags: ["Product"]
      *     summary: Return 'OK' to illustrate usage of a manager
@@ -96,7 +96,7 @@ export class ProductRoute {
      *         description: Error during query execution
      */
     this.api.get(
-      "/manager/exemple",
+      "/manager/example",
       this.productController.health.bind(this.productController)
     );
   }
